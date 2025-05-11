@@ -176,8 +176,7 @@ RunService.RenderStepped:Connect(function()
 				part.CanCollide = false
 			end
 		end
-	end
- -- === Part Selection Dropdown ===
+	end-- === Part Selection Dropdown ===
 local partLabel = Instance.new("TextLabel", aimbotTab)
 partLabel.Size = UDim2.new(0.9, 0, 0, 20)
 partLabel.Position = UDim2.new(0.05, 0, 0, 120)
@@ -220,5 +219,4 @@ toggleBtn.MouseButton1Click:Connect(function()
 	guiVisible = not guiVisible
 	mainFrame.Visible = guiVisible
 end)
-
-end)
+		end)
