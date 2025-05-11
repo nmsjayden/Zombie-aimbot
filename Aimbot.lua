@@ -177,7 +177,7 @@ RunService.RenderStepped:Connect(function()
 			end
 		end
 	end
-    -- === Part Selection Dropdown ===
+ -- === Part Selection Dropdown ===
 local partLabel = Instance.new("TextLabel", aimbotTab)
 partLabel.Size = UDim2.new(0.9, 0, 0, 20)
 partLabel.Position = UDim2.new(0.05, 0, 0, 120)
@@ -203,7 +203,8 @@ partDropdown.MouseButton1Click:Connect(function()
 	targetPartName = partOptions[next]
 	partDropdown.Text = targetPartName
 	vprint("Part set to: " .. targetPartName)
-end
+end)
+
 -- === GUI TOGGLE BUTTON ===
 local toggleBtn = Instance.new("TextButton", gui)
 toggleBtn.Size = UDim2.new(0, 50, 0, 50)
@@ -218,5 +219,6 @@ local guiVisible = true
 toggleBtn.MouseButton1Click:Connect(function()
 	guiVisible = not guiVisible
 	mainFrame.Visible = guiVisible
-end
+end)
+
 end)
